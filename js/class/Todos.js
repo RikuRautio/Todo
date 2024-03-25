@@ -32,7 +32,7 @@ class Todos {
                 body: json
             })
             .then((response) => response.json())
-            .net((json) => {
+            .then((json) => {
                 resolve(this.#addToArray(json.id,text))
             },(error) => {
                 reject(error)

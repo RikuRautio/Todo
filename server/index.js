@@ -18,7 +18,6 @@ app.get("/", (req,res) => {
     }
     res.status(200).json(result.rows)
    })
-})
 
 app.post("/new",(req,res) => {
     const pool = openDb()
